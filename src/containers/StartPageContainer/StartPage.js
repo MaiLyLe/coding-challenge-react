@@ -1,7 +1,7 @@
 import React from 'react';
 
 function StartPage() {
-  return <div>Startpage</div>;
+  return <div>start</div>;
 }
 
 export default StartPage;
