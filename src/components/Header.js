@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     left: theme.spacing.unit * 7
   },
   header: {
-    fontSize: 100
+    fontSize: '10rem'
   },
   headerSubtitle: {
     color: 'white'
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const pageNames = {
-  '/': ['Start', ''],
+  '/': ['Start', '...protesting'],
   '/QuizPage': ['Quiz', "Wer hat's geagt? Hitler or Björn Höcke?"],
   '/AgainstNazisInfoPage': ['Unite', '...against Right-Wing Extremism.']
 };

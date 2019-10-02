@@ -5,11 +5,15 @@ import { ThemeProvider } from '@material-ui/styles';
 import Routes from './Routes';
 import Header from './components/Header';
 
+const defaultTheme = createMuiTheme();
 const theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'Anton, sans-serif',
-      fontSize: '10rem'
+      fontSize: '10rem',
+      [defaultTheme.breakpoints.down('md')]: {
+        fontSize: '6rem'
+      }
     },
     h6: {
       fontFamily: 'Anton, sans-serif'

@@ -14,9 +14,9 @@ export default class Routes extends React.PureComponent {
   render() {
     return (
       <Switch>
-        <Route path="/" component={StartPage} />
-        <Route path={routeMap.Quiz} component={QuizPage} />
-        <Route path={routeMap.About} component={AgainstNazisInfoPage} />
+        <Route exact path="/" component={StartPage} />
+        <Route exact path={routeMap.Quiz} component={QuizPage} />
+        <Route exact path={routeMap.About} component={AgainstNazisInfoPage} />
       </Switch>
     );
   }
