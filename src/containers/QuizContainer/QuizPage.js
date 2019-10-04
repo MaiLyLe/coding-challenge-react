@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { connect, useSelector } from 'react-redux';
 import { loadQuizQuestions, loadImages } from './actions';
 import QuizCard from '../../components/QuizCard';
+import EvaluationCard from '../../components/EvaluationCard';
 
 function QuizPage(props) {
   const { images, quizQuestions } = useSelector(state => ({
     images: state.images,
     quizQuestions: state.quizQuestions
   }));
+  const [counterCorrectAnswers, setCounterCorrectAnswers] = useState(0);
   const [questionCounter, setQuestionCounter] = useState(0);
 
   useEffect(() => {
@@ -19,7 +21,19 @@ function QuizPage(props) {
     setQuestionCounter(questionCounter + 1);
   };
 
+  const onEvaluateRightAnswer = () => {
+    setCounterCorrectAnswers(counterCorrectAnswers + 1);
+  };
+
   if (quizQuestions && images) {
+    if (questionCounter === quizQuestions.length) {
+      return (
+        <EvaluationCard
+          totalNumberOfQuestions={quizQuestions.length}
+          numberOfRightAnswers={counterCorrectAnswers}
+        />
+      );
+    }
     return (
       <div>
         {quizQuestions.map((questionObj, index) => {
@@ -32,6 +46,7 @@ function QuizPage(props) {
                 counter={questionCounter}
                 rightAnswer={questionObj.rightAnswer}
                 onClickContinue={onClickContinue}
+                countRightAnswers={onEvaluateRightAnswer}
               />
             );
           }

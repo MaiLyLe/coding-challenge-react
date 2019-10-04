@@ -92,13 +92,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function QuizCard({
-  width,
   quote,
   imageUrl,
   possibleAnswers,
   rightAnswer,
   onClickContinue,
-  counter
+  counter,
+  countRightAnswers
 }) {
   const classes = useStyles();
   const [chosenButton, setChosenButton] = useState('');
@@ -126,11 +126,20 @@ function QuizCard({
     return null;
   };
 
+  const evaluateAndSetCounterToNextQuestion = () => {
+    if (correctlyGuessed) {
+      countRightAnswers();
+    }
+    onClickContinue();
+  };
+
   const displayContinueButton = () => {
     if (alreadyAnswered) {
       return (
         <Grid item>
-          <Button onClick={onClickContinue}>{'Continue >'} </Button>
+          <Button onClick={evaluateAndSetCounterToNextQuestion}>
+            {'Continue >'}{' '}
+          </Button>
         </Grid>
       );
     }

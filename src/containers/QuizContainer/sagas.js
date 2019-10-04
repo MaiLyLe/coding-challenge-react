@@ -1,7 +1,7 @@
 import { call, takeLatest, put } from 'redux-saga/effects';
 import axios from 'axios';
 import { LOAD_QUIZ_QUESTIONS, LOAD_IMAGES } from './constants';
-import { unsplashID } from '../../cred.js';
+import unsplashID from '../../cred';
 import {
   loadQuizQuestionsSuccess,
   loadImagesSuccess,
@@ -25,8 +25,7 @@ function getImages() {
   return axios.get('https://api.unsplash.com/search/photos', {
     params: { query: 'germany' },
     headers: {
-      Authorization:
-        `Client-ID ${unsplashID}`
+      Authorization: `Client-ID ${unsplashID}`
     }
   });
 }
