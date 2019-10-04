@@ -48,9 +48,9 @@ const useStyles = makeStyles(theme => ({
 
 function AgainstNazisInfoPage(props) {
   const classes = useStyles();
-
+  const { width } = props;
   const displayImage = () => {
-    if (isWidthUp('sm', props.width)) {
+    if (isWidthUp('sm', width)) {
       return (
         <CardMedia
           className={classes.cover}
@@ -59,6 +59,7 @@ function AgainstNazisInfoPage(props) {
         />
       );
     }
+    return null;
   };
 
   return (

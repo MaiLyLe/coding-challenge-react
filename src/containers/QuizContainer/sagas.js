@@ -14,11 +14,10 @@ function getQuizQuestions() {
 }
 export function* loadQuizQuestions() {
   try {
-    let resp = yield call(getQuizQuestions);
-    console.log(resp.data);
+    const resp = yield call(getQuizQuestions);
     yield put(loadQuizQuestionsSuccess(resp.data));
   } catch (e) {
-    yield put(errorLoadImages(e));
+    yield put(errorLoadQuizQuestions(e));
   }
 }
 
@@ -34,17 +33,14 @@ function getImages() {
 
 export function* loadImages() {
   try {
-    let resp = yield call(getImages);
-    yield console.log("ffnfn");
-    yield console.log(resp.data);
-    yield put(loadImagesSuccess(resp.data));
+    const resp = yield call(getImages);
+    yield put(loadImagesSuccess(resp.data.results));
   } catch (e) {
-    console.error(e);
+    yield put(errorLoadImages(e));
   }
 }
 
 export default function* watcherSagaQuizPage() {
-  console.log("watched");
   yield takeLatest(LOAD_QUIZ_QUESTIONS, loadQuizQuestions);
   yield takeLatest(LOAD_IMAGES, loadImages);
 }

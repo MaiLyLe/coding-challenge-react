@@ -3,12 +3,12 @@
     {
       "id": 1,
       "quote": "Ich will, dass Magdeburg und dass Deutschland nicht nur eine tausendjährige Vergangenheit haben. Ich will, dass sie noch eine tausendjährige Zukunft haben[...]",
-      "rightAnswer": "Hoecke"
+      "rightAnswer": "Höcke"
     },
     {
       "id": 2,
       "quote": "Wir müssen unsere Männlichkeit wieder entdecken. Denn nur wenn wir unsere Männlichkeit wiederentdecken, werden wir mannhaft. Und nur wenn wir mannhaft werden, werden wir wehrhaft, und wir müssen wehrhaft werden, liebe Freunde!",
-      "rightAnswer": "Hoecke"
+      "rightAnswer": "Höcke"
     },
     {
       "id": 3,
@@ -18,21 +18,36 @@
     {
       "id": 4,
       "quote": "Unser einst weltweit beneideter sozialer Friede ist durch den steigenden Missbrauch und die Aufgabe der national begrenzten Solidargemeinschaft sowie durch den Import fremder Völkerschaften und die zwangsläufigen Konflikte existenziell gefährdet.",
-      "rightAnswer": "Hoecke"
+      "rightAnswer": "Höcke"
     },
     {
       "id": 5,
       "quote": "Ein paar Korrekturen und Reförmchen werden nicht ausreichen, aber die deutsche Unbedingtheit wird der Garant dafür sein, dass wir die Sache gründlich und grundsätzlich anpacken werden. Wenn einmal die Wendezeit gekommen ist, dann machen wir Deutschen keine halben Sachen, dann werden die Schutthalden der Moderne beseitigt.",
-      "rightAnswer": "Hoecke"
+      "rightAnswer": "Höcke"
     },
     {
       "id": 6,
       "quote": "Die Evolution hat Afrika und Europa vereinfacht gesagt zwei unterschiedliche Reproduktionsstrategien beschert. Sehr gut nachvollziehbar für jeden Biologen.",
-      "rightAnswer": "Hoecke"
+      "rightAnswer": "Höcke"
     },
     {
       "id": 7,
       "quote": "Im allgemeinen soll aber nie vergessen werden, daß nicht die Erhaltung eines Staates oder gar die einer Regierung höchster Zweck des Daseins der Menschen ist, sondern die Bewahrung ihrer Art.",
+      "rightAnswer": "Hitler"
+    },
+    {
+      "id": 8,
+      "quote": "Unsere geistigen Schichten sind besonders in Deutschland so in sich abgeschlossen und verkalkt, daß ihnen die lebendige Verbindung nach unten fehlt. […] Sie sind zu lange schon aus diesem Zusammenhang herausgerissen, als daß sie noch das nötige psychologische Verständnis für das Volk besitzen könnten. Sie sind volksfremd geworden.",
+      "rightAnswer": "Hitler"
+    },
+    {
+      "id": 9,
+      "quote": "Der Parteiengeist muss überwunden, die innere Einheit hergestellt werden[...] Schluss mit dem westlich-dekadenten Liberalismus und der ausufernden Parteienherrschaft.",
+      "rightAnswer": "Höcke"
+    },
+    {
+      "id": 10,
+      "quote": "Man vergesse niemals, daß alles wirklich Große auf dieser Welt nicht erkämpft wurde von Koalitionen, sondern daß es stets der Erfolg eines einzelnen Siegers war. Koalitionserfolge tragen schon durch die Art ihrer Herkunft den Keim zu künftigem Abbröckeln, ja zum Verlust des schon Erreichten",
       "rightAnswer": "Hitler"
     }
   ]
