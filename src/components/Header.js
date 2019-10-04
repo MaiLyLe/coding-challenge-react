@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const pageNames = {
-  '/': ['Start', '...protesting'],
+  '/': ['Start', '...protesting against Racism'],
   '/QuizPage': ['Quiz', "Wer hat's geagt? Hitler or Björn Höcke?"],
   '/AgainstNazisInfoPage': ['Unite', '...against Right-Wing Extremism.']
 };
